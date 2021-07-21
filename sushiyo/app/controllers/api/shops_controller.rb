@@ -3,9 +3,9 @@ class Api::ShopsController < ApplicationController
 
   # GET /shops
   def index
-    @shops = Shop.all
+    shops = Shop.all
 
-    render json: @shops
+    render json: shops, only: [:name, :items], include:{items:{except:[:created_at, :updated_at]}}
   end
 
   # GET /shops/1
