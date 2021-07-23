@@ -15,10 +15,11 @@ class Api::ItemsController < ApplicationController
 
   # POST /items
   def create
-    @item = Item.new(item_params)
+    @shop = Shop.find_by_id(params[:shop_id])
+    @item = @shop.items.build(item_params)
 
     if @item.save
-      render json: @item, status: :created, location: @item
+      render json: @item, status: :created
     else
       render json: @item.errors, status: :unprocessable_entity
     end
@@ -46,6 +47,6 @@ class Api::ItemsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def item_params
-      params.require(:item).permit(:title, :price)
+      params.require(:item).permit(:image, :title, :price)
     end
 end
