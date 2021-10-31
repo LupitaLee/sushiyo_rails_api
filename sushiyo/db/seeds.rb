@@ -43,10 +43,10 @@ salad_bowls.save
 
 drink_stop = Shop.create(name:"Drink Stop")
 
-drink_stop.items.build(image:"https://images.heb.com/is/image/HEBGrocery/prd-small/004389545.jpg",
+drink_stop.items.build(image:"https://images.unsplash.com/photo-1497534446932-c925b458314e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZHJpbmtzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60",
 title: "Sun Kiss", price: 4.59)
 
-drink_stop.items.build(image:"https://images.heb.com/is/image/HEBGrocery/prd-small/001388754.jpg",
-title: "Cherry Lime", price: 3.39)
+drink_stop.items.build(image:"https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8ZHJpbmtzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60",
+title: "Fresh Lime", price: 3.39)
 
 drink_stop.save
