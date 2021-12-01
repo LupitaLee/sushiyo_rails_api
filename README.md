@@ -13,9 +13,6 @@ And then execute:
 
     $ bundle install
 
-Or install it yourself as:
-
-    $ gem install test
 
 Here a link for the Frond end repo.
 ```
